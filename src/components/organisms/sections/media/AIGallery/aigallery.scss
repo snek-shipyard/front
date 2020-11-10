@@ -1,0 +1,43 @@
+#gallery {
+  .card {
+    .card-body {
+      padding: 0;
+
+      img {
+        width: 100%;
+      }
+
+      .mask {
+        background: transparentize($color: white, $amount: 1);
+        transition: background 0.1s ease;
+        cursor: pointer;
+
+        &:hover {
+          background: transparentize($color: white, $amount: 0.9);
+        }
+      }
+    }
+  }
+
+  .video-preview {
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    position: absolute;
+  }
+
+  .fa-times {
+    &.text-muted {
+      transition: color 0.1s ease;
+
+      &:hover {
+        color: red !important;
+      }
+    }
+  }
+}
+
+/**
+ * SPDX-License-Identifier: (EUPL-1.2)
+ * Copyright © 2019-2020 Simon Prast
+ */

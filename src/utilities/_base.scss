@@ -54,11 +54,8 @@
   }
 
   &.btn-green {
-    background-color: transparentize(
-      $color: $snekGreen,
-      $amount: 0.4
-    ) !important;
-    border: 2px $snekGreen solid;
+    background-color: $snekGreen !important;
+    border-radius: 2rem;
 
     &:hover {
       background-color: transparentize(
@@ -179,6 +176,16 @@
     left: 100% !important;
     width: 5000px !important;
   }
+}
+
+code {
+  margin-left: 0.4rem;
+  background-color: #f7f8fb;
+  padding: 2px 4px;
+  font-size: 70%;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+  color: #475366;
+  border-radius: 0.4rem;
 }
 
 // Google icon

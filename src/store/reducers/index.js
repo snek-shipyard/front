@@ -7,24 +7,33 @@ import { combineReducers } from "redux";
 import { loadingBarReducer } from "react-redux-loading-bar";
 
 //> Reducers
-// Authentication
-import authReducer from "./authReducers";
-// General
-import generalReducer from "./generalReducers";
 // User
-import userReducer from "./userReducers";
+import userReducers from "./userReducers";
+// Person
+import personReducers from "./personReducers";
+// General
+import generalReducers from "./generalReducers";
+// Talk
+import talkReducer from "./talkReducers";
+// Enterprise
+import enterpriseReducer from "./enterpriseReducers";
+
 //#endregion
 
 //#region > Config
 const rootReducer = combineReducers({
   // Loading bar
   loadingBar: loadingBarReducer,
-  // User authentication
-  auth: authReducer,
-  // General data
-  general: generalReducer,
   // User data
-  user: userReducer,
+  user: userReducers,
+  // Person data
+  person: personReducers,
+  // General data
+  general: generalReducers,
+  // Talk data
+  talk: talkReducer,
+  // Enterprise data
+  enterprise: enterpriseReducer,
 });
 //#endregion
 

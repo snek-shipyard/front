@@ -11,6 +11,11 @@ import Calendar3D from "./charts/Calendar3D";
 import ContribRadar from "./charts/ContribRadar";
 import LatestActivity from "./charts/LatestActivity";
 import LanguageChart from "./charts/LanguageBar";
+import Achievement from "./Achievement";
+//> Enterprise page
+import AIBarChart from "./charts/AIBarChart";
+import AILineChart from "./charts/AILineChart";
+import AIContribCalendar from "./charts/AIContribCalendar";
 //> General
 import SearchBar from "./SearchBar";
 import ErrorBoundary from "./ErrorBoundary";
@@ -19,7 +24,9 @@ import ErrorBoundary from "./ErrorBoundary";
 //#region > Exports
 //> Atoms
 export {
+  /* Generic */
   ScrollToTop,
+  /* User profile */
   Project,
   Pinned,
   Calendar2D,
@@ -27,6 +34,12 @@ export {
   ContribRadar,
   LatestActivity,
   LanguageChart,
+  Achievement,
+  /* Enterprise page */
+  AIBarChart,
+  AILineChart,
+  AIContribCalendar,
+  /* General */
   SearchBar,
   ErrorBoundary,
 };
